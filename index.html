@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Crypto Dashboard</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <div class="crypto-list">
+        <div class="crypto-item" id="bitcoin">
+          <h3>Bitcoin</h3>
+          <p class="price" id="bitcoin-price">Loading...</p>
+        </div>
+        <div class="crypto-item" id="ethereum">
+          <h3>Ethereum</h3>
+          <p class="price" id="ethereum-price">Loading...</p>
+        </div>
+        <div class="crypto-item" id="litecoin">
+          <h3>Litecoin</h3>
+          <p class="price" id="litecoin-price">Loading...</p>
+        </div>
+        <div class="crypto-item">
+            <h3>Tether (USDT)</h3>
+            <p id="tether-price">Loading...</p>
+        </div>
+      </div>
+
+
+      <div class="time-selector">
+        <label for="time-range">Select Time Range:</label>
+        <select id="time-range">
+          <option value="hour">1 Hour</option>
+          <option value="day">1 Day</option>
+          <option value="week">1 Week</option>
+          <option value="month">1 Month</option>
+          <option value="year">1 Year</option>
+        </select>
+      </div>
+      <!-- Chart for Price History -->
+      <div class="crypto-chart">
+        <canvas id="cryptoChart"></canvas>
+      </div>
+
+      <!-- Market Data Section -->
+      <div class="market-overview">
+        <h2>Market Overview</h2>
+        <div id="market-cap">Loading Market Cap...</div>
+        <div id="total-volume">Loading Total Volume...</div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2024 Crypto Dashboard</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
