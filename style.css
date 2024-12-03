@@ -6,7 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #b2e3ff;
+    background-color: #f2faff;
     color: #333;
     padding: 20px;
   }
@@ -19,7 +19,7 @@
   .header {
     text-align: center;
     padding: 20px;
-    background-color: #4CAF50;
+    background-image: linear-gradient(to top, #070c4e, #07404e );
     color: white;
   }
   
